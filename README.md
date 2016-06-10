@@ -1,5 +1,5 @@
 # Android Challenge
-Please create a text carousel that incorporates unit tests for the methods 
+Fork the branch and create a text carousel that incorporates unit tests for the methods 
 defined. Please run this description text carousel in the MainFragment, and
 ensure the descriptions-- say, for example, "Fandor is a pretty cool service--!!"--
 change every 6 seconds. 
@@ -20,4 +20,4 @@ is an example of a good testing style.
 
 ## Breath
 You have three hours to do this. Write some code, have some fun, and ensure
-that you enjoy the process--!!
+that you enjoy the process--!! 
