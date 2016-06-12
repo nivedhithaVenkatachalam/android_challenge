@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
@@ -28,9 +30,25 @@ public class MainActivityFragment extends Fragment {
   @Override
   public View onCreateView(LayoutInflater inflater, ViewGroup container,
                            Bundle savedInstanceState) {
-      Carousel introDescriptionCarousel=new Carousel();
-    TextView TV=new TextView(mContext);
 
-    return inflater.inflate(R.layout.fragment_main, container, false);
+
+    View rootView = inflater.inflate(R.layout.fragment_main, container, false);
+    //TextView t= (TextView) rootView.findViewById(R.id.etv);
+    //t.setText("Testing e");
+      Carousel introDescriptionCarousel=new Carousel();
+    TextView tv=new TextView(mContext);
+
+    RelativeLayout lo=(RelativeLayout) rootView.findViewById(R.id.lo);
+    tv.setText("Testing");
+    tv.setPadding(20, 150, 0, 0);
+    lo.addView(tv);
+    introDescriptionCarousel.setTv(tv);
+
+    introDescriptionCarousel.addIntroDescription("Fandor is a pretty cool service!");
+    introDescriptionCarousel.addIntroDescription("There are so many movies to watch!");
+
+    introDescriptionCarousel.updateDescContinuously();
+
+    return rootView;
   }
 }
