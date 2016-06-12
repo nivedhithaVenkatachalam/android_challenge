@@ -41,6 +41,7 @@ public class MainActivityFragment extends Fragment {
     RelativeLayout lo=(RelativeLayout) rootView.findViewById(R.id.lo);
     tv.setText("Testing");
     tv.setPadding(20, 150, 0, 0);
+    tv.setId(R.id.tv);
     lo.addView(tv);
     introDescriptionCarousel.setTv(tv);
 
@@ -48,7 +49,7 @@ public class MainActivityFragment extends Fragment {
     introDescriptionCarousel.addIntroDescription("There are so many movies to watch!");
 
     introDescriptionCarousel.updateDescContinuously();
-    
+
     return rootView;
   }
 }
