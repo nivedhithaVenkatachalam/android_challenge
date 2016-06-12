@@ -21,3 +21,7 @@ is an example of a good testing style.
 ## Breath
 You have three hours to do this. Write some code, have some fun, and ensure
 that you enjoy the process--!! 
+
+## Thoughts/Questions
+
+The challenging portion of testing the carousel class is testing the continuously updating text in the carousel object. I looked into Mockito to see if I could mock the textview which is being updated continously as well as tried extending Instrumented Unit test case class. I will keep researching on how to refer to a android view object from a test class. 
