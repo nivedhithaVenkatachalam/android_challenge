@@ -48,7 +48,7 @@ public class MainActivityFragment extends Fragment {
     introDescriptionCarousel.addIntroDescription("There are so many movies to watch!");
 
     introDescriptionCarousel.updateDescContinuously();
-
+    
     return rootView;
   }
 }
