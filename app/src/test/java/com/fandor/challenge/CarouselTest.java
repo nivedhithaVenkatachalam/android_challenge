@@ -1,8 +1,16 @@
 package com.fandor.challenge;
 
+import android.test.InstrumentationTestCase;
+import android.view.LayoutInflater;
+import android.view.View;
 import android.widget.TextView;
 
+import junit.framework.TestCase;
+
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.Mock;
+import org.mockito.runners.MockitoJUnitRunner;
 
 import java.util.ArrayList;
 
@@ -12,7 +20,8 @@ import static org.hamcrest.CoreMatchers.*;
 /**
  * Created by nivedhithav on 6/11/16.
  */
-public class CarouselTest {
+
+public class CarouselTest{
 
     @Test
     public void testAddIntroDescription(){
@@ -33,11 +42,6 @@ public class CarouselTest {
         assertThat(myCarousel.getArr(),is(testArray));
     }
 
-    @Test
-    public void testUpdateDescContinuously(){
-        Carousel myCarousel=new Carousel();
-        TextView tv=new TextView(this);
-    }
 
 
 }
