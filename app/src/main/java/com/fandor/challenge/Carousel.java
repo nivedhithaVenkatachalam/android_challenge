@@ -15,8 +15,8 @@ public class Carousel {
     ArrayList<String> arr;
     TextView tv;
     Handler handler=new Handler();
-    int arrSize=0;
-    int count=0;
+    private int arrSize=0;
+    private int count=0;
 
     public Carousel(){
         arr=new ArrayList<String>();
@@ -29,6 +29,10 @@ public class Carousel {
 
     public ArrayList<String> getArr(){
         return arr;
+    }
+
+    public int getArraySize(){
+        return arrSize;
     }
 
     public void setTv(TextView tv){
